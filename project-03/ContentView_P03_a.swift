@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView_P03_a: View {
     @State private var isOn = false;
     var body: some View {
-        VStack {
+		VStack(spacing: 16) {
             Button("Hello") {
                 isOn.toggle()
             }
@@ -12,7 +12,7 @@ struct ContentView_P03_a: View {
             .padding()
                         .border(.blue, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
             .frame(width: 100, height: 100)
-            .background(isOn ? .blue : .black)
+			.background(isOn ? .blue : .green)
             .foregroundColor(.black)
             
             Text("bgs")
@@ -22,13 +22,13 @@ struct ContentView_P03_a: View {
                 .background(.blue)
                 .padding()
                 .background(.yellow)
+			
+			CapsuleText(text: "olar")
+			CapsuleText(text: "Sample Text")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.black, ignoresSafeAreaEdges: .all)
+        .background(.background, ignoresSafeAreaEdges: .all)
         .font(.title)
-        
-        CapsuleText(text: "olar")
-        CapsuleText(text: "Sample Text")
     }
 }
 struct CapsuleText: View {
@@ -38,8 +38,14 @@ struct CapsuleText: View {
         Text(text)
             .font(.largeTitle)
             .padding()
-            .foregroundColor(.white)
+            .foregroundColor(.primary)
             .background(.blue)
             .clipShape(Capsule())
     }
+}
+
+struct ContentView_Previews_P03_a: PreviewProvider {
+	static var previews: some View {
+		ContentView_P03_a()
+	}
 }

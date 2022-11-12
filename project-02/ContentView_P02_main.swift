@@ -91,3 +91,8 @@ struct ContentView_P02_main: View {
     }
 }
 
+struct ContentView_Previews_P02_main: PreviewProvider {
+	static var previews: some View {
+		ContentView_P02_main()
+	}
+}

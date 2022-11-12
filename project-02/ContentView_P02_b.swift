@@ -68,8 +68,8 @@ struct ContentView_P02_b: View {
     }
 }
 
-struct SampleView02_Previews: PreviewProvider {
-    static var previews: some View {
-        SampleView02()
-    }
+struct ContentView_Previews_P02_b: PreviewProvider {
+	static var previews: some View {
+		ContentView_P02_b()
+	}
 }

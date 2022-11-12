@@ -39,3 +39,9 @@ struct ContentView_P01_a: View {
         }
     }
 }
+
+struct ContentView_Previews_P01_a: PreviewProvider {
+	static var previews: some View {
+		ContentView_P01_a()
+	}
+}

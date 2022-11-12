@@ -70,8 +70,8 @@ struct ContentView_P01_main: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews_P01_main: PreviewProvider {
+    static var previews: some View {
+        ContentView_P01_main()
+    }
+}

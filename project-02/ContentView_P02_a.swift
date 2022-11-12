@@ -44,9 +44,8 @@ struct ContentView_P02_a: View {
     }
 }
 
-
-struct SamplePreviewer: PreviewProvider {
-    static var previews: some View {
-        SampleView_01()
-    }
+struct ContentView_Previews_P02_a: PreviewProvider {
+	static var previews: some View {
+		ContentView_P02_a()
+	}
 }

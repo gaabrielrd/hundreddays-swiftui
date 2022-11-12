@@ -54,8 +54,8 @@ struct ContentView_P01_b: View {
     }
 }
 
-struct MyView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyView()
-    }
+struct ContentView_Previews_P01_b: PreviewProvider {
+	static var previews: some View {
+		ContentView_P01_b()
+	}
 }
